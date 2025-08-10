@@ -59,7 +59,7 @@ export default function HeroSection() {
 
           {/* Right Image */}
           <div className="relative">
-            <div className="relative z-10">
+            <div className="relative z-20">
               <img 
                 src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
                 alt="Professional man working on laptop" 
@@ -68,8 +68,8 @@ export default function HeroSection() {
               />
             </div>
             
-            {/* Decorative dots - exact pattern from reference */}
-            <div className="absolute bottom-16 -left-12 flex flex-col space-y-3" data-testid="decorative-dots-pattern">
+            {/* Decorative dots - positioned behind image on bottom left */}
+            <div className="absolute bottom-8 left-4 z-0 flex flex-col space-y-3" data-testid="decorative-dots-pattern">
               {/* First row - 2 dots */}
               <div className="flex space-x-3">
                 <div className="w-3 h-3 bg-primary rounded-full"></div>

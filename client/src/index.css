@@ -121,11 +121,10 @@
   }
   
   .cropped-corner {
-    clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 20px 100%, 0 calc(100% - 20px));
+    border-radius: 12px;
   }
   
   .cropped-corner-lg {
-    clip-path: polygon(0 0, calc(100% - 30px) 0, 100% 30px, 100% 100%, 30px 100%, 0 calc(100% - 30px));
     border-radius: 20px;
   }
   
