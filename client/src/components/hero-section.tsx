@@ -37,7 +37,7 @@ export default function HeroSection() {
 
             {/* Trust Indicators */}
             <div className="pt-8">
-              <p className="text-sm text-gray-500 mb-6" data-testid="trust-text">A Product by Raqmi</p>
+              <p className="text-sm text-gray-500 mb-6" data-testid="trust-text">Trusted by the best</p>
               <div className="flex items-center space-x-8 opacity-60">
                 <div className="flex items-center space-x-2" data-testid="trust-indicator-seomena">
                   <i className="fas fa-search text-primary text-xl"></i>
@@ -46,10 +46,6 @@ export default function HeroSection() {
                 <div className="flex items-center space-x-2" data-testid="trust-indicator-executex">
                   <i className="fas fa-rocket text-primary text-xl"></i>
                   <span className="text-gray-700 font-medium">ExecuteX</span>
-                </div>
-                <div className="flex items-center space-x-2" data-testid="trust-indicator-trustpilot">
-                  <i className="fas fa-star text-primary text-xl"></i>
-                  <span className="text-gray-700 font-medium">Trustpilot</span>
                 </div>
               </div>
             </div>
