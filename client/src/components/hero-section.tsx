@@ -69,7 +69,7 @@ export default function HeroSection() {
             </div>
             
             {/* Decorative dots - positioned behind image at bottom */}
-            <div className="absolute bottom-0 -left-6 z-10 flex flex-col space-y-2" data-testid="decorative-dots-pattern">
+            <div className="absolute -bottom-8 -left-6 z-10 flex flex-col space-y-2" data-testid="decorative-dots-pattern">
               {/* First row - 2 dots */}
               <div className="flex space-x-2">
                 <div className="w-2.5 h-2.5 bg-primary rounded-full"></div>
