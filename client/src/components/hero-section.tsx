@@ -68,42 +68,42 @@ export default function HeroSection() {
               />
             </div>
             
-            {/* Decorative dots - positioned exactly like reference image */}
-            <div className="absolute bottom-4 -left-6 z-30 flex flex-col space-y-3" data-testid="decorative-dots-pattern">
+            {/* Decorative dots - positioned behind image at bottom */}
+            <div className="absolute bottom-0 -left-6 z-10 flex flex-col space-y-2" data-testid="decorative-dots-pattern">
               {/* First row - 2 dots */}
-              <div className="flex space-x-3">
-                <div className="w-3 h-3 bg-primary rounded-full"></div>
-                <div className="w-3 h-3 bg-primary rounded-full"></div>
+              <div className="flex space-x-2">
+                <div className="w-2.5 h-2.5 bg-primary rounded-full"></div>
+                <div className="w-2.5 h-2.5 bg-primary rounded-full"></div>
               </div>
               {/* Second row - 2 dots */}
-              <div className="flex space-x-3">
-                <div className="w-3 h-3 bg-primary rounded-full"></div>
-                <div className="w-3 h-3 bg-primary rounded-full"></div>
+              <div className="flex space-x-2">
+                <div className="w-2.5 h-2.5 bg-primary rounded-full"></div>
+                <div className="w-2.5 h-2.5 bg-primary rounded-full"></div>
               </div>
               {/* Third row - 2 dots */}
-              <div className="flex space-x-3">
-                <div className="w-3 h-3 bg-primary rounded-full"></div>
-                <div className="w-3 h-3 bg-primary rounded-full"></div>
+              <div className="flex space-x-2">
+                <div className="w-2.5 h-2.5 bg-primary rounded-full"></div>
+                <div className="w-2.5 h-2.5 bg-primary rounded-full"></div>
               </div>
               {/* Fourth row - 2 dots */}
-              <div className="flex space-x-3">
-                <div className="w-3 h-3 bg-primary rounded-full"></div>
-                <div className="w-3 h-3 bg-primary rounded-full"></div>
+              <div className="flex space-x-2">
+                <div className="w-2.5 h-2.5 bg-primary rounded-full"></div>
+                <div className="w-2.5 h-2.5 bg-primary rounded-full"></div>
               </div>
               {/* Bottom rows - extending pattern outside image */}
-              <div className="flex space-x-3">
-                <div className="w-3 h-3 bg-primary rounded-full"></div>
-                <div className="w-3 h-3 bg-primary rounded-full"></div>
-                <div className="w-3 h-3 bg-primary rounded-full"></div>
-                <div className="w-3 h-3 bg-primary rounded-full"></div>
-                <div className="w-3 h-3 bg-primary rounded-full"></div>
+              <div className="flex space-x-2">
+                <div className="w-2.5 h-2.5 bg-primary rounded-full"></div>
+                <div className="w-2.5 h-2.5 bg-primary rounded-full"></div>
+                <div className="w-2.5 h-2.5 bg-primary rounded-full"></div>
+                <div className="w-2.5 h-2.5 bg-primary rounded-full"></div>
+                <div className="w-2.5 h-2.5 bg-primary rounded-full"></div>
               </div>
-              <div className="flex space-x-3">
-                <div className="w-3 h-3 bg-primary rounded-full"></div>
-                <div className="w-3 h-3 bg-primary rounded-full"></div>
-                <div className="w-3 h-3 bg-primary rounded-full"></div>
-                <div className="w-3 h-3 bg-primary rounded-full"></div>
-                <div className="w-3 h-3 bg-primary rounded-full"></div>
+              <div className="flex space-x-2">
+                <div className="w-2.5 h-2.5 bg-primary rounded-full"></div>
+                <div className="w-2.5 h-2.5 bg-primary rounded-full"></div>
+                <div className="w-2.5 h-2.5 bg-primary rounded-full"></div>
+                <div className="w-2.5 h-2.5 bg-primary rounded-full"></div>
+                <div className="w-2.5 h-2.5 bg-primary rounded-full"></div>
               </div>
             </div>
           </div>
