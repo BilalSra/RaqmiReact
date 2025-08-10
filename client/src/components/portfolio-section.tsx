@@ -41,7 +41,7 @@ export default function PortfolioSection() {
           {portfolioItems.map((item, index) => (
             <div 
               key={index}
-              className="group cursor-pointer relative"
+              className="group cursor-pointer"
               data-testid={`portfolio-item-${index}`}
             >
               <div className="relative overflow-hidden cropped-corner-lg mb-6">
@@ -59,15 +59,6 @@ export default function PortfolioSection() {
               <p className="text-gray-600" data-testid={`portfolio-description-${index}`}>
                 {item.description}
               </p>
-              
-              {/* Decorative dots for first and last items */}
-              {(index === 0 || index === 2) && (
-                <div className="absolute -bottom-2 -right-2 flex space-x-1" data-testid={`portfolio-dots-${index}`}>
-                  {Array.from({ length: 5 }, (_, i) => (
-                    <div key={i} className="w-1.5 h-1.5 bg-primary rounded-full opacity-50"></div>
-                  ))}
-                </div>
-              )}
             </div>
           ))}
         </div>

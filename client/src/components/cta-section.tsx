@@ -2,12 +2,8 @@ import { Button } from "@/components/ui/button";
 
 export default function CtaSection() {
   return (
-    <section className="bg-primary py-16 lg:py-24 relative overflow-hidden">
-      {/* Background dot patterns */}
-      <div className="absolute top-8 left-8 w-32 h-32 dot-pattern-sparse opacity-10"></div>
-      <div className="absolute bottom-8 right-8 w-24 h-24 dot-pattern-sparse opacity-10"></div>
-      
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+    <section className="bg-primary py-16 lg:py-24">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="space-y-6 max-w-3xl mx-auto">
           <h2 className="text-3xl lg:text-4xl font-bold text-white" data-testid="cta-title">
             Ready to Start Your Project?
@@ -30,13 +26,6 @@ export default function CtaSection() {
               View Our Work
             </Button>
           </div>
-        </div>
-        
-        {/* Decorative corner dots */}
-        <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2" data-testid="cta-decorative-dots">
-          {Array.from({ length: 7 }, (_, i) => (
-            <div key={i} className="w-2 h-2 bg-white rounded-full opacity-30"></div>
-          ))}
         </div>
       </div>
     </section>
