@@ -119,4 +119,24 @@
   .primary-gradient {
     background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
   }
+  
+  .cropped-corner {
+    clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 20px 100%, 0 calc(100% - 20px));
+  }
+  
+  .cropped-corner-lg {
+    clip-path: polygon(0 0, calc(100% - 40px) 0, 100% 40px, 100% 100%, 40px 100%, 0 calc(100% - 40px));
+  }
+  
+  .dot-pattern-grid {
+    background-image: 
+      radial-gradient(circle at 1px 1px, rgba(99, 102, 241, 0.3) 1px, transparent 0);
+    background-size: 20px 20px;
+  }
+  
+  .dot-pattern-sparse {
+    background-image: 
+      radial-gradient(circle at 1px 1px, rgba(99, 102, 241, 0.2) 1px, transparent 0);
+    background-size: 40px 40px;
+  }
 }

@@ -59,19 +59,33 @@ export default function HeroSection() {
 
           {/* Right Image */}
           <div className="relative">
+            {/* Background dot pattern */}
+            <div className="absolute -top-8 -right-8 w-32 h-32 dot-pattern-sparse opacity-20"></div>
+            
             <div className="relative z-10">
               <img 
                 src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
                 alt="Professional man working on laptop" 
-                className="rounded-2xl shadow-2xl w-full h-auto object-cover" 
+                className="cropped-corner-lg shadow-2xl w-full h-auto object-cover" 
                 data-testid="hero-image"
               />
             </div>
             
-            {/* Decorative dots */}
-            <div className="absolute bottom-4 right-4 grid grid-cols-4 gap-2 opacity-30" data-testid="decorative-dots">
-              {Array.from({ length: 16 }, (_, i) => (
-                <div key={i} className="w-2 h-2 bg-primary rounded-full"></div>
+            {/* Decorative dots - left side pattern */}
+            <div className="absolute bottom-8 -left-8 flex flex-col space-y-2" data-testid="decorative-dots-left">
+              {Array.from({ length: 4 }, (_, row) => (
+                <div key={row} className="flex space-x-2">
+                  {Array.from({ length: row + 2 }, (_, col) => (
+                    <div key={col} className="w-2 h-2 bg-primary rounded-full opacity-60"></div>
+                  ))}
+                </div>
+              ))}
+            </div>
+
+            {/* Decorative dots - bottom pattern */}
+            <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2" data-testid="decorative-dots-bottom">
+              {Array.from({ length: 8 }, (_, i) => (
+                <div key={i} className="w-2 h-2 bg-primary rounded-full opacity-40"></div>
               ))}
             </div>
           </div>

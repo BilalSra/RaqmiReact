@@ -36,7 +36,7 @@ export default function ServicesSection() {
           {services.map((service, index) => (
             <div 
               key={index}
-              className="bg-gray-50 p-8 rounded-2xl hover:shadow-lg transition-shadow duration-300"
+              className="bg-gray-50 p-8 cropped-corner hover:shadow-lg transition-shadow duration-300 relative"
               data-testid={`service-card-${index}`}
             >
               <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-6">
@@ -48,6 +48,15 @@ export default function ServicesSection() {
               <p className="text-gray-600" data-testid={`service-description-${index}`}>
                 {service.description}
               </p>
+              
+              {/* Decorative dots for middle service */}
+              {index === 1 && (
+                <div className="absolute -top-4 -right-4 grid grid-cols-3 gap-1" data-testid={`service-dots-${index}`}>
+                  {Array.from({ length: 9 }, (_, i) => (
+                    <div key={i} className="w-1 h-1 bg-primary rounded-full opacity-40"></div>
+                  ))}
+                </div>
+              )}
             </div>
           ))}
         </div>

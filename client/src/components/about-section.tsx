@@ -21,8 +21,11 @@ export default function AboutSection() {
           </div>
 
           {/* Right Content - Connect Section */}
-          <div className="space-y-6">
-            <div className="bg-white p-8 rounded-2xl shadow-lg">
+          <div className="relative space-y-6">
+            {/* Background decorative dots */}
+            <div className="absolute -top-8 -right-8 w-24 h-24 dot-pattern-sparse opacity-15"></div>
+            
+            <div className="bg-white p-8 cropped-corner shadow-lg relative">
               <h3 className="text-2xl font-bold text-gray-900 mb-4" data-testid="connect-title">
                 Connect With Us
               </h3>
@@ -63,6 +66,13 @@ export default function AboutSection() {
                 >
                   <i className="fab fa-linkedin-in"></i>
                 </a>
+              </div>
+
+              {/* Decorative corner dots */}
+              <div className="absolute -bottom-4 -left-4 flex space-x-1" data-testid="connect-decorative-dots">
+                {Array.from({ length: 6 }, (_, i) => (
+                  <div key={i} className="w-1.5 h-1.5 bg-primary rounded-full opacity-50"></div>
+                ))}
               </div>
             </div>
           </div>
