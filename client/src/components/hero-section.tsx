@@ -68,8 +68,8 @@ export default function HeroSection() {
               />
             </div>
             
-            {/* Decorative dots - positioned behind image on bottom left */}
-            <div className="absolute bottom-8 left-4 z-0 flex flex-col space-y-3" data-testid="decorative-dots-pattern">
+            {/* Decorative dots - positioned exactly like reference image */}
+            <div className="absolute bottom-4 -left-6 z-30 flex flex-col space-y-3" data-testid="decorative-dots-pattern">
               {/* First row - 2 dots */}
               <div className="flex space-x-3">
                 <div className="w-3 h-3 bg-primary rounded-full"></div>
@@ -90,7 +90,7 @@ export default function HeroSection() {
                 <div className="w-3 h-3 bg-primary rounded-full"></div>
                 <div className="w-3 h-3 bg-primary rounded-full"></div>
               </div>
-              {/* Bottom rows - extending pattern */}
+              {/* Bottom rows - extending pattern outside image */}
               <div className="flex space-x-3">
                 <div className="w-3 h-3 bg-primary rounded-full"></div>
                 <div className="w-3 h-3 bg-primary rounded-full"></div>
