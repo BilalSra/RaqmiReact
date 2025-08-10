@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import businessGrowthImage from "@assets/Business growth_1754822270274.jpg";
 
 export default function HeroSection() {
   return (
@@ -58,8 +59,8 @@ export default function HeroSection() {
           <div className="relative">
             <div className="relative z-20">
               <img 
-                src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
-                alt="Professional man working on laptop" 
+                src={businessGrowthImage} 
+                alt="Business growth chart with upward trending arrow" 
                 className="cropped-corner-lg shadow-2xl w-full h-auto object-cover" 
                 data-testid="hero-image"
               />
