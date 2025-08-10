@@ -34,18 +34,6 @@ export default function AboutSection() {
                 results and sustainable growth in today's competitive landscape.
               </p>
               
-              {/* Growth Stats */}
-              <div className="grid grid-cols-2 gap-4 mb-6">
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-primary">200%</div>
-                  <div className="text-sm text-gray-600">Average Traffic Growth</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-primary">80%</div>
-                  <div className="text-sm text-gray-600">Client Success Rate</div>
-                </div>
-              </div>
-              
               {/* Social Media Links */}
               <div className="flex space-x-4">
                 <a 
