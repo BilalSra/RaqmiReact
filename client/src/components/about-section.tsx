@@ -7,39 +7,42 @@ export default function AboutSection() {
           <div className="space-y-6">
             <div className="space-y-4">
               <p className="text-primary font-semibold text-sm uppercase tracking-wide" data-testid="about-label">
-                OUR APPROACH
+                ABOUT US
               </p>
               <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 leading-tight" data-testid="about-title">
-                Data That Drives<br />
-                Results
+                Empowering MENA<br />
+                Business Growth
               </h2>
               <p className="text-gray-600 text-lg leading-relaxed" data-testid="about-description">
-                See how our data-driven approach can transform your key business metrics. 
-                We help bridge the gap between your current performance and untapped potential.
+                Raqmi is a specialized growth marketing agency focused on the MENA region. 
+                We leverage data-driven strategies, cutting-edge AI technologies, and deep 
+                regional market insights to accelerate business growth for companies across 
+                the Middle East and North Africa.
               </p>
             </div>
           </div>
 
-          {/* Right Content - Performance Metrics */}
+          {/* Right Content - Connect Section */}
           <div className="space-y-6">
             <div className="bg-white p-8 cropped-corner shadow-lg">
               <h3 className="text-2xl font-bold text-gray-900 mb-4" data-testid="connect-title">
-                Performance Growth
+                Connect With Us
               </h3>
               <p className="text-gray-600 mb-6" data-testid="connect-description">
-                Track your growth journey with our proven methodology that delivers 
-                measurable results across key performance indicators.
+                Ready to transform your business with proven growth marketing strategies? 
+                Our team of MENA market experts is here to help you achieve measurable 
+                results and sustainable growth in today's competitive landscape.
               </p>
               
-              {/* Performance Metrics */}
+              {/* Growth Stats */}
               <div className="grid grid-cols-2 gap-4 mb-6">
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-primary">+45%</div>
-                  <div className="text-sm text-gray-600">Initial Growth</div>
+                  <div className="text-2xl font-bold text-primary">200%</div>
+                  <div className="text-sm text-gray-600">Average Traffic Growth</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-primary">+68%</div>
-                  <div className="text-sm text-gray-600">Final Growth</div>
+                  <div className="text-2xl font-bold text-primary">80%</div>
+                  <div className="text-sm text-gray-600">Client Success Rate</div>
                 </div>
               </div>
               
