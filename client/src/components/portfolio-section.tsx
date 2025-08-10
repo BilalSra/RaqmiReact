@@ -4,21 +4,24 @@ export default function PortfolioSection() {
   const portfolioItems = [
     {
       image: "https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
-      alt: "Modern office workspace",
-      title: "E-commerce Platform",
-      description: "Complete online store solution with modern design and seamless user experience."
+      alt: "HTUx Growth Acceleration",
+      title: "HTUx Growth Acceleration",
+      description: "Boosted student enrollment by 80% through targeted digital campaigns and optimized conversion funnels.",
+      metrics: ["+80% Enrollment", "+58% Conversion", "6 months"]
     },
     {
       image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
-      alt: "Business team collaboration",
-      title: "Corporate Website",
-      description: "Professional corporate presence with advanced functionality and sleek design."
+      alt: "Lisan Market Expansion",
+      title: "Lisan Market Expansion",
+      description: "Facilitated Lisan's growth strategy, resulting in a 90% increase in user base and significant boost in website traffic.",
+      metrics: ["+200% Traffic", "+90% Users", "6 months"]
     },
     {
       image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
-      alt: "Professional working on laptop",
-      title: "Mobile App",
-      description: "Cross-platform mobile application with intuitive interface and powerful features."
+      alt: "ExecuteX Product Development",
+      title: "ExecuteX Product Development",
+      description: "Developed within Raqmi Innovation Lab, ExecuteX empowers businesses to bridge the gap between strategy and execution.",
+      metrics: ["+38% Success", "+45% Engagement", "-67% Gap"]
     }
   ];
 
@@ -27,13 +30,13 @@ export default function PortfolioSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center space-y-4 mb-16">
           <p className="text-primary font-semibold text-sm uppercase tracking-wide" data-testid="portfolio-label">
-            PORTFOLIO
+            CLIENT PORTFOLIO
           </p>
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900" data-testid="portfolio-title">
-            Our Recent Work
+            Client Growth Journey
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto" data-testid="portfolio-description">
-            Take a look at some of our recent projects and see how we've helped businesses achieve their goals.
+            Explore the transformative journeys of our clients as we've helped them achieve remarkable growth and success.
           </p>
         </div>
 
@@ -56,9 +59,22 @@ export default function PortfolioSection() {
               <h3 className="text-xl font-bold text-gray-900 mb-2" data-testid={`portfolio-title-${index}`}>
                 {item.title}
               </h3>
-              <p className="text-gray-600" data-testid={`portfolio-description-${index}`}>
+              <p className="text-gray-600 mb-4" data-testid={`portfolio-description-${index}`}>
                 {item.description}
               </p>
+              
+              {/* Metrics display */}
+              <div className="flex flex-wrap gap-2">
+                {item.metrics.map((metric, metricIndex) => (
+                  <span 
+                    key={metricIndex}
+                    className="text-xs bg-primary/10 text-primary px-2 py-1 rounded-full font-medium"
+                    data-testid={`portfolio-metric-${index}-${metricIndex}`}
+                  >
+                    {metric}
+                  </span>
+                ))}
+              </div>
             </div>
           ))}
         </div>
@@ -66,9 +82,9 @@ export default function PortfolioSection() {
         <div className="text-center mt-12">
           <Button 
             className="bg-primary text-white px-8 py-3 rounded-lg font-medium hover:bg-indigo-600 transition-colors duration-200"
-            data-testid="button-view-all-work"
+            data-testid="button-growth-solutions"
           >
-            View All Work
+            Growth Solutions
           </Button>
         </div>
       </div>

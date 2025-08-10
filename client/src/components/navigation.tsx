@@ -31,9 +31,9 @@ export default function Navigation() {
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center" data-testid="logo-container">
             <div className="bg-primary w-8 h-8 cropped-corner flex items-center justify-center mr-3">
-              <i className="fas fa-bolt text-white text-lg"></i>
+              <i className="fas fa-chart-line text-white text-lg"></i>
             </div>
-            <span className="text-xl font-bold text-gray-900">Agency</span>
+            <span className="text-xl font-bold text-gray-900">Raqmi</span>
           </div>
 
           {/* Desktop Navigation */}

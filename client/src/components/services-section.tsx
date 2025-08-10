@@ -1,19 +1,34 @@
 export default function ServicesSection() {
   const services = [
     {
-      icon: "fas fa-code",
-      title: "Web Development",
-      description: "Custom web applications built with modern technologies and best practices for optimal performance."
-    },
-    {
-      icon: "fas fa-palette",
-      title: "UI/UX Design",
-      description: "Beautiful, intuitive designs that provide exceptional user experiences across all devices."
-    },
-    {
       icon: "fas fa-chart-line",
-      title: "Digital Marketing",
-      description: "Strategic marketing campaigns that drive growth and increase your online visibility."
+      title: "Growth Strategies",
+      description: "Tailored, data-driven strategies to accelerate your business growth in the MENA region with measurable outcomes."
+    },
+    {
+      icon: "fas fa-bullseye",
+      title: "ROI-Focused Digital Marketing",
+      description: "Maximize your marketing investments with campaigns designed to deliver measurable returns and sustainable growth."
+    },
+    {
+      icon: "fas fa-robot",
+      title: "Generative Search Optimization",
+      description: "Optimize your content for AI-powered search engines and generative AI platforms to capture emerging search behaviors."
+    },
+    {
+      icon: "fas fa-search",
+      title: "SEO Strategies",
+      description: "Boost your online visibility and drive targeted traffic with our expert search engine optimization and content strategies."
+    },
+    {
+      icon: "fas fa-cogs",
+      title: "Technology Integration",
+      description: "Seamlessly integrate cutting-edge marketing technologies to enhance your digital presence and operational efficiency."
+    },
+    {
+      icon: "fas fa-lightbulb",
+      title: "AI-Powered Solution Development",
+      description: "Leverage cutting-edge artificial intelligence to create custom solutions that automate processes and deliver intelligent insights."
     }
   ];
 
@@ -25,10 +40,10 @@ export default function ServicesSection() {
             OUR SERVICES
           </p>
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900" data-testid="services-title">
-            What We Do Best
+            Growth-Focused Solutions
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto" data-testid="services-description">
-            We provide comprehensive digital solutions to help your business thrive in the modern world.
+            Transform your business performance with Raqmi's data-driven marketing expertise.
           </p>
         </div>
 

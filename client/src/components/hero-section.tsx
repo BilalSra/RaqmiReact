@@ -9,13 +9,11 @@ export default function HeroSection() {
           <div className="space-y-8">
             <div className="space-y-6">
               <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight" data-testid="hero-title">
-                Next.js Site Template For Agency and Portfolio
+                Scaling Businesses, Redefining Growth
               </h1>
               <p className="text-lg text-gray-600 leading-relaxed" data-testid="hero-description">
-                Elevate your online presence and impress clients effortlessly! 
-                — featuring essential integrations, pre-built pages, and 
-                customizable components. Modern, responsive design with 
-                fast loading and SEO optimization.
+                Raqmi empowers MENA businesses with data-driven growth strategies. 
+                Transforming brands through innovation-driven strategic mindset.
               </p>
             </div>
 
@@ -23,35 +21,34 @@ export default function HeroSection() {
             <div className="flex flex-col sm:flex-row gap-4">
               <Button 
                 className="bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-indigo-600 transition-colors duration-200 flex items-center justify-center"
-                data-testid="button-explore-portfolio"
+                data-testid="button-grow-with-raqmi"
               >
-                Explore Portfolio
+                Grow with Raqmi
               </Button>
               <Button 
                 variant="outline"
                 className="text-primary bg-primary-light border border-primary/20 px-6 py-3 rounded-lg font-medium hover:bg-primary/5 transition-colors duration-200 flex items-center justify-center"
-                data-testid="button-download-brochure"
+                data-testid="button-explore-solutions"
               >
-                <i className="fas fa-download mr-2"></i>
-                Download Brochure
+                Explore Solutions
               </Button>
             </div>
 
             {/* Trust Indicators */}
             <div className="pt-8">
-              <p className="text-sm text-gray-500 mb-6" data-testid="trust-text">Trusted by the best</p>
+              <p className="text-sm text-gray-500 mb-6" data-testid="trust-text">A Product by Raqmi</p>
               <div className="flex items-center space-x-8 opacity-60">
-                <div className="flex items-center space-x-2" data-testid="trust-indicator-lineicons">
-                  <i className="fas fa-layer-group text-primary text-xl"></i>
-                  <span className="text-gray-700 font-medium">Lineicons</span>
+                <div className="flex items-center space-x-2" data-testid="trust-indicator-seomena">
+                  <i className="fas fa-search text-primary text-xl"></i>
+                  <span className="text-gray-700 font-medium">SEOMENA</span>
                 </div>
-                <div className="flex items-center space-x-2" data-testid="trust-indicator-formbold">
-                  <i className="fas fa-cube text-primary text-xl"></i>
-                  <span className="text-gray-700 font-medium">FormBold</span>
+                <div className="flex items-center space-x-2" data-testid="trust-indicator-executex">
+                  <i className="fas fa-rocket text-primary text-xl"></i>
+                  <span className="text-gray-700 font-medium">ExecuteX</span>
                 </div>
-                <div className="flex items-center space-x-2" data-testid="trust-indicator-uideck">
-                  <i className="fas fa-puzzle-piece text-primary text-xl"></i>
-                  <span className="text-gray-700 font-medium">UIdeck</span>
+                <div className="flex items-center space-x-2" data-testid="trust-indicator-trustpilot">
+                  <i className="fas fa-star text-primary text-xl"></i>
+                  <span className="text-gray-700 font-medium">Trustpilot</span>
                 </div>
               </div>
             </div>

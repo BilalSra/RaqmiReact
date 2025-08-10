@@ -7,31 +7,41 @@ export default function AboutSection() {
           <div className="space-y-6">
             <div className="space-y-4">
               <p className="text-primary font-semibold text-sm uppercase tracking-wide" data-testid="about-label">
-                ABOUT US
+                OUR APPROACH
               </p>
               <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 leading-tight" data-testid="about-title">
-                Better design,<br />
-                better experience
+                Data That Drives<br />
+                Results
               </h2>
               <p className="text-gray-600 text-lg leading-relaxed" data-testid="about-description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dui ligula, 
-                malesuada vel convallis in, tincidunt ut mi. Vestibulum sit amet.
+                See how our data-driven approach can transform your key business metrics. 
+                We help bridge the gap between your current performance and untapped potential.
               </p>
             </div>
           </div>
 
-          {/* Right Content - Connect Section */}
+          {/* Right Content - Performance Metrics */}
           <div className="space-y-6">
             <div className="bg-white p-8 cropped-corner shadow-lg">
               <h3 className="text-2xl font-bold text-gray-900 mb-4" data-testid="connect-title">
-                Connect With Us
+                Performance Growth
               </h3>
               <p className="text-gray-600 mb-6" data-testid="connect-description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque 
-                dui ligula, malesuada vel convallis in, tincidunt ut mi. Vestibulum sit 
-                amet urna placerat, tempor arcu eget risus quis, elit lorem 
-                vitae semper tempor.
+                Track your growth journey with our proven methodology that delivers 
+                measurable results across key performance indicators.
               </p>
+              
+              {/* Performance Metrics */}
+              <div className="grid grid-cols-2 gap-4 mb-6">
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-primary">+45%</div>
+                  <div className="text-sm text-gray-600">Initial Growth</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-primary">+68%</div>
+                  <div className="text-sm text-gray-600">Final Growth</div>
+                </div>
+              </div>
               
               {/* Social Media Links */}
               <div className="flex space-x-4">

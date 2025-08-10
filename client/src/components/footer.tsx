@@ -7,12 +7,12 @@ export default function Footer() {
           <div className="space-y-4" data-testid="footer-company-info">
             <div className="flex items-center">
               <div className="bg-primary w-8 h-8 cropped-corner flex items-center justify-center mr-3">
-                <i className="fas fa-bolt text-white text-lg"></i>
+                <i className="fas fa-chart-line text-white text-lg"></i>
               </div>
-              <span className="text-xl font-bold">Agency</span>
+              <span className="text-xl font-bold">Raqmi</span>
             </div>
             <p className="text-gray-400" data-testid="footer-company-description">
-              Creating exceptional digital experiences that drive growth and success for businesses worldwide.
+              Empowering MENA businesses with data-driven growth strategies. Transforming brands through innovation-driven strategic mindset.
             </p>
             <div className="flex space-x-4">
               <a 
@@ -81,64 +81,80 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Services */}
-          <div className="space-y-4" data-testid="footer-services">
-            <h3 className="text-lg font-semibold">Services</h3>
+          {/* Products */}
+          <div className="space-y-4" data-testid="footer-products">
+            <h3 className="text-lg font-semibold">Our Products</h3>
             <div className="space-y-2">
               <a 
                 href="#" 
                 className="block text-gray-400 hover:text-white transition-colors duration-200"
-                data-testid="footer-service-web-dev"
+                data-testid="footer-product-seomena"
               >
-                Web Development
+                SEOMENA
               </a>
               <a 
                 href="#" 
                 className="block text-gray-400 hover:text-white transition-colors duration-200"
-                data-testid="footer-service-ui-ux"
+                data-testid="footer-product-executex"
               >
-                UI/UX Design
+                ExecuteX
               </a>
               <a 
                 href="#" 
                 className="block text-gray-400 hover:text-white transition-colors duration-200"
-                data-testid="footer-service-marketing"
+                data-testid="footer-product-innovation-lab"
               >
-                Digital Marketing
+                Innovation Lab
               </a>
               <a 
                 href="#" 
                 className="block text-gray-400 hover:text-white transition-colors duration-200"
-                data-testid="footer-service-branding"
+                data-testid="footer-blog"
               >
-                Brand Strategy
+                Blog & Insights
               </a>
             </div>
           </div>
 
-          {/* Contact Info */}
-          <div className="space-y-4" data-testid="footer-contact-info">
-            <h3 className="text-lg font-semibold">Contact Info</h3>
+          {/* Solutions */}
+          <div className="space-y-4" data-testid="footer-solutions">
+            <h3 className="text-lg font-semibold">Solutions</h3>
             <div className="space-y-2">
-              <p className="text-gray-400 flex items-center" data-testid="footer-address">
-                <i className="fas fa-map-marker-alt mr-2"></i>
-                123 Business Street, City, State 12345
-              </p>
-              <p className="text-gray-400 flex items-center" data-testid="footer-phone">
-                <i className="fas fa-phone mr-2"></i>
-                (555) 123-4567
-              </p>
-              <p className="text-gray-400 flex items-center" data-testid="footer-email">
-                <i className="fas fa-envelope mr-2"></i>
-                hello@agency.com
-              </p>
+              <a 
+                href="#" 
+                className="block text-gray-400 hover:text-white transition-colors duration-200"
+                data-testid="footer-solution-growth"
+              >
+                Growth Strategies
+              </a>
+              <a 
+                href="#" 
+                className="block text-gray-400 hover:text-white transition-colors duration-200"
+                data-testid="footer-solution-roi"
+              >
+                ROI-Focused Marketing
+              </a>
+              <a 
+                href="#" 
+                className="block text-gray-400 hover:text-white transition-colors duration-200"
+                data-testid="footer-solution-gso"
+              >
+                Generative Search Optimization
+              </a>
+              <a 
+                href="#" 
+                className="block text-gray-400 hover:text-white transition-colors duration-200"
+                data-testid="footer-solution-ai"
+              >
+                AI-Powered Solutions
+              </a>
             </div>
           </div>
         </div>
 
         <div className="border-t border-gray-800 mt-12 pt-8 text-center">
           <p className="text-gray-400" data-testid="footer-copyright">
-            © 2024 Agency. All rights reserved.
+            © 2024 Raqmi. All rights reserved.
           </p>
         </div>
       </div>

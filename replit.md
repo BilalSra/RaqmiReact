@@ -1,8 +1,17 @@
-# Agency Website Template
+# Raqmi Agency Landing Page
 
 ## Overview
 
-This is a modern React-based agency website template built with a full-stack architecture. The project features a clean, responsive design showcasing agency services, portfolio, and company information. It's built with TypeScript, uses Vite for development, and includes a complete component library based on shadcn/ui. The backend is prepared for REST API development with Express.js and includes database integration capabilities through Drizzle ORM.
+This is a modern React-based landing page for Raqmi, a MENA-focused growth marketing agency. The project features a clean, responsive design showcasing Raqmi's data-driven growth strategies, client success stories, and innovative solutions. Built with TypeScript and Vite, the landing page includes authentic content sourced from raqmi.io and maintains the original template's design aesthetics with cropped corners and dot patterns. The backend is prepared for REST API development with Express.js and includes database integration capabilities through Drizzle ORM.
+
+## Recent Changes
+
+- **January 2025**: Updated all landing page content with authentic data from raqmi.io
+- **Content Sections Updated**: Hero, About, Services, Portfolio, Footer, and Navigation now reflect Raqmi's actual business offerings
+- **Added Insights Section**: New blog/insights section showcasing Raqmi's thought leadership content
+- **Brand Integration**: Updated logos, company names, and color schemes to match Raqmi branding
+- **Client Portfolio**: Replaced generic portfolio items with real Raqmi client success stories (HTUx, Lisan, ExecuteX)
+- **Services Alignment**: Updated service offerings to match Raqmi's actual solutions (Growth Strategies, ROI-Focused Marketing, GSO, etc.)
 
 ## User Preferences
 
