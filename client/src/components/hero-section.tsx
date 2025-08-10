@@ -37,7 +37,10 @@ export default function HeroSection() {
 
             {/* Trust Indicators */}
             <div className="pt-8">
-              <p className="text-sm text-gray-500 mb-6" data-testid="trust-text">Trusted by the best</p>
+              <div className="flex items-center mb-6" data-testid="trust-text">
+                <p className="text-sm text-gray-500 mr-3">Trusted by the best</p>
+                <div className="flex-1 h-px bg-gray-300 max-w-[60px]"></div>
+              </div>
               <div className="flex items-center space-x-8 opacity-60">
                 <div className="flex items-center space-x-2" data-testid="trust-indicator-seomena">
                   <i className="fas fa-search text-primary text-xl"></i>
