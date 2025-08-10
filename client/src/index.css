@@ -125,7 +125,8 @@
   }
   
   .cropped-corner-lg {
-    clip-path: polygon(0 0, calc(100% - 40px) 0, 100% 40px, 100% 100%, 40px 100%, 0 calc(100% - 40px));
+    clip-path: polygon(0 0, calc(100% - 30px) 0, 100% 30px, 100% 100%, 30px 100%, 0 calc(100% - 30px));
+    border-radius: 20px;
   }
   
   .dot-pattern-grid {

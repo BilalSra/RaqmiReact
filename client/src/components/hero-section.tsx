@@ -59,9 +59,6 @@ export default function HeroSection() {
 
           {/* Right Image */}
           <div className="relative">
-            {/* Background dot pattern */}
-            <div className="absolute -top-8 -right-8 w-32 h-32 dot-pattern-sparse opacity-20"></div>
-            
             <div className="relative z-10">
               <img 
                 src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
@@ -71,22 +68,43 @@ export default function HeroSection() {
               />
             </div>
             
-            {/* Decorative dots - left side pattern */}
-            <div className="absolute bottom-8 -left-8 flex flex-col space-y-2" data-testid="decorative-dots-left">
-              {Array.from({ length: 4 }, (_, row) => (
-                <div key={row} className="flex space-x-2">
-                  {Array.from({ length: row + 2 }, (_, col) => (
-                    <div key={col} className="w-2 h-2 bg-primary rounded-full opacity-60"></div>
-                  ))}
-                </div>
-              ))}
-            </div>
-
-            {/* Decorative dots - bottom pattern */}
-            <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2" data-testid="decorative-dots-bottom">
-              {Array.from({ length: 8 }, (_, i) => (
-                <div key={i} className="w-2 h-2 bg-primary rounded-full opacity-40"></div>
-              ))}
+            {/* Decorative dots - exact pattern from reference */}
+            <div className="absolute bottom-16 -left-12 flex flex-col space-y-3" data-testid="decorative-dots-pattern">
+              {/* First row - 2 dots */}
+              <div className="flex space-x-3">
+                <div className="w-3 h-3 bg-primary rounded-full"></div>
+                <div className="w-3 h-3 bg-primary rounded-full"></div>
+              </div>
+              {/* Second row - 2 dots */}
+              <div className="flex space-x-3">
+                <div className="w-3 h-3 bg-primary rounded-full"></div>
+                <div className="w-3 h-3 bg-primary rounded-full"></div>
+              </div>
+              {/* Third row - 2 dots */}
+              <div className="flex space-x-3">
+                <div className="w-3 h-3 bg-primary rounded-full"></div>
+                <div className="w-3 h-3 bg-primary rounded-full"></div>
+              </div>
+              {/* Fourth row - 2 dots */}
+              <div className="flex space-x-3">
+                <div className="w-3 h-3 bg-primary rounded-full"></div>
+                <div className="w-3 h-3 bg-primary rounded-full"></div>
+              </div>
+              {/* Bottom rows - extending pattern */}
+              <div className="flex space-x-3">
+                <div className="w-3 h-3 bg-primary rounded-full"></div>
+                <div className="w-3 h-3 bg-primary rounded-full"></div>
+                <div className="w-3 h-3 bg-primary rounded-full"></div>
+                <div className="w-3 h-3 bg-primary rounded-full"></div>
+                <div className="w-3 h-3 bg-primary rounded-full"></div>
+              </div>
+              <div className="flex space-x-3">
+                <div className="w-3 h-3 bg-primary rounded-full"></div>
+                <div className="w-3 h-3 bg-primary rounded-full"></div>
+                <div className="w-3 h-3 bg-primary rounded-full"></div>
+                <div className="w-3 h-3 bg-primary rounded-full"></div>
+                <div className="w-3 h-3 bg-primary rounded-full"></div>
+              </div>
             </div>
           </div>
         </div>
