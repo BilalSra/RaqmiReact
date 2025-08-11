@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import businessGrowthImage from "@assets/Business growth_1754822270274.jpg";
+import { SiGoogle, SiMeta, SiMailchimp, SiLinkedin, SiOpenai } from "react-icons/si";
 
 export default function HeroSection() {
   return (
@@ -38,17 +39,24 @@ export default function HeroSection() {
             {/* Trust Indicators */}
             <div className="pt-8">
               <div className="flex items-center mb-6" data-testid="trust-text">
-                <p className="text-sm text-gray-500 mr-3">Trusted by the best</p>
+                <p className="text-sm text-gray-500 mr-3">Delivering results where it matters</p>
                 <div className="flex-1 h-px bg-gray-300 max-w-[36px]"></div>
               </div>
               <div className="flex items-center space-x-8 opacity-60">
-                <div className="flex items-center space-x-2" data-testid="trust-indicator-seomena">
-                  <i className="fas fa-search text-primary text-xl"></i>
-                  <span className="text-gray-700 font-medium">SEOMENA</span>
+                <div className="flex items-center space-x-2" data-testid="trust-indicator-google" aria-label="Google logo">
+                  <SiGoogle className="text-gray-500" size={22} />
                 </div>
-                <div className="flex items-center space-x-2" data-testid="trust-indicator-executex">
-                  <i className="fas fa-rocket text-primary text-xl"></i>
-                  <span className="text-gray-700 font-medium">ExecuteX</span>
+                <div className="flex items-center space-x-2" data-testid="trust-indicator-openai" aria-label="OpenAI logo">
+                  <SiOpenai className="text-gray-500" size={22} />
+                </div>
+                <div className="flex items-center space-x-2" data-testid="trust-indicator-meta" aria-label="Meta logo">
+                  <SiMeta className="text-gray-500" size={22} />
+                </div>
+                <div className="flex items-center space-x-2" data-testid="trust-indicator-mailchimp" aria-label="Mailchimp logo">
+                  <SiMailchimp className="text-gray-500" size={22} />
+                </div>
+                <div className="flex items-center space-x-2" data-testid="trust-indicator-linkedin" aria-label="LinkedIn logo">
+                  <SiLinkedin className="text-gray-500" size={22} />
                 </div>
               </div>
             </div>
@@ -66,7 +74,7 @@ export default function HeroSection() {
             </div>
             
             {/* Decorative dots - positioned behind image at bottom */}
-            <div className="absolute -bottom-8 -left-6 z-10 flex flex-col space-y-2" data-testid="decorative-dots-pattern">
+            <div className="absolute -bottom-8 -left-8 z-10 flex flex-col space-y-2" data-testid="decorative-dots-pattern">
               {/* First row - 2 dots */}
               <div className="flex space-x-2">
                 <div className="w-2.5 h-2.5 bg-primary rounded-full"></div>

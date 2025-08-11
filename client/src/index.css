@@ -13,7 +13,8 @@
   --primary: hsl(247.5 88.1% 62.4%);
   --primary-foreground: hsl(0 0% 100%);
   --primary-light: hsl(243.4 100% 96.5%);
-  --secondary: hsl(210 25% 7.8431%);
+  /* Use a blue tone for secondary to match the design (close to indigo/primary) */
+  --secondary: hsl(247.5 88.1% 62.4%);
   --secondary-foreground: hsl(0 0% 100%);
   --muted: hsl(240 1.9608% 90%);
   --muted-foreground: hsl(210 25% 7.8431%);
@@ -138,5 +139,12 @@
     background-image: 
       radial-gradient(circle at 1px 1px, rgba(99, 102, 241, 0.2) 1px, transparent 0);
     background-size: 40px 40px;
+  }
+
+  /* Stronger, red-tinted dot grid for decorative overlays */
+  .dot-pattern-grid-red {
+    background-image:
+      radial-gradient(circle at 1px 1px, rgba(239, 68, 68, 0.5) 1px, transparent 0);
+    background-size: 20px 20px;
   }
 }

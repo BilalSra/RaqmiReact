@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { useIsMobile } from "@/hooks/use-mobile";
+import Logo from "@/components/logo";
 
 export default function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -29,11 +30,8 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="flex-shrink-0 flex items-center" data-testid="logo-container">
-            <div className="bg-primary w-8 h-8 cropped-corner flex items-center justify-center mr-3">
-              <i className="fas fa-chart-line text-white text-lg"></i>
-            </div>
-            <span className="text-xl font-bold text-gray-900">Raqmi</span>
+          <div className="flex-shrink-0" data-testid="logo-container">
+            <Logo text="Raqmi" />
           </div>
 
           {/* Desktop Navigation */}

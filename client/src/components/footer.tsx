@@ -1,16 +1,13 @@
+import Logo from "@/components/logo";
+
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-white py-16">
+    <footer className="relative overflow-hidden bg-[#0b1230] text-white py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="space-y-4" data-testid="footer-company-info">
-            <div className="flex items-center">
-              <div className="bg-primary w-8 h-8 cropped-corner flex items-center justify-center mr-3">
-                <i className="fas fa-chart-line text-white text-lg"></i>
-              </div>
-              <span className="text-xl font-bold">Raqmi</span>
-            </div>
+            <Logo text="Raqmi" />
             <p className="text-gray-400" data-testid="footer-company-description">
               Empowering MENA businesses with data-driven growth strategies. Transforming brands through innovation-driven strategic mindset.
             </p>
@@ -152,11 +149,26 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-gray-800 mt-12 pt-8 text-center">
+        <div className="border-t border-white/10 mt-12 pt-8 text-center">
           <p className="text-gray-400" data-testid="footer-copyright">
             © 2024 Raqmi. All rights reserved.
           </p>
         </div>
+      </div>
+
+      {/* Decorative elements */}
+      {/* Bottom-left concentric rings */}
+      <div aria-hidden className="pointer-events-none absolute -bottom-16 -left-16 w-56 h-56 rounded-full border-8 border-primary/30" />
+      <div aria-hidden className="pointer-events-none absolute -bottom-28 -left-28 w-80 h-80 rounded-full border-8 border-primary/10" />
+
+      {/* Top-right dotted grid */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute top-6 right-6 grid grid-cols-4 gap-2"
+      >
+        {Array.from({ length: 16 }).map((_, i) => (
+          <span key={i} className="w-1.5 h-1.5 rounded-full bg-white/20" />
+        ))}
       </div>
     </footer>
   );

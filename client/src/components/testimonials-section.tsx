@@ -83,16 +83,8 @@ export default function TestimonialsSection() {
 
         {/* Additional Client Logos */}
         <div className="mt-16 text-center">
-          <p className="text-sm text-gray-500 mb-8">Trusted by leading companies across the MENA region</p>
-          <div className="flex justify-center items-center space-x-12 opacity-60">
-            <div className="flex items-center space-x-2">
-              <i className="fas fa-rocket text-primary text-2xl"></i>
-              <span className="text-gray-700 font-medium">ExecuteX</span>
-            </div>
-            <div className="flex items-center space-x-2">
-              <i className="fas fa-search text-primary text-2xl"></i>
-              <span className="text-gray-700 font-medium">SEOMENA</span>
-            </div>
+          <p className="text-sm text-gray-500 mb-8">More voices from our clients</p>
+          <div className="flex justify-center items-center opacity-60">
             <div className="flex items-center space-x-2">
               <i className="fas fa-star text-primary text-2xl"></i>
               <span className="text-gray-700 font-medium">Trustpilot</span>
