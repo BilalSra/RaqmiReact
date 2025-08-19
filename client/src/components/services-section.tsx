@@ -51,18 +51,30 @@ export default function ServicesSection() {
           {services.map((service, index) => (
             <div 
               key={index}
-              className="bg-gray-50 p-8 cropped-corner hover:shadow-lg transition-shadow duration-300"
+              className="group relative bg-gradient-to-br from-white to-gray-50/50 p-6 rounded-3xl shadow-2xl border-2 border-primary/10 backdrop-blur-sm"
               data-testid={`service-card-${index}`}
             >
-              <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-6">
-                <i className={`${service.icon} text-white text-xl`}></i>
+              {/* Floating icon design */}
+              <div className="relative mb-8">
+                <div className="absolute -top-3 -left-3 w-16 h-16 bg-primary/10 rounded-2xl blur-lg"></div>
+                <div className="relative w-16 h-16 bg-gradient-to-br from-primary via-primary to-secondary rounded-2xl flex items-center justify-center shadow-xl group-hover:rotate-6 group-hover:scale-110 transition-transform duration-300">
+                  <i className={`${service.icon} text-white text-2xl`}></i>
+                </div>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4" data-testid={`service-title-${index}`}>
-                {service.title}
-              </h3>
-              <p className="text-gray-600" data-testid={`service-description-${index}`}>
-                {service.description}
-              </p>
+              
+              {/* Content with glassmorphism effect */}
+              <div className="space-y-4">
+                <h3 className="text-xl font-bold text-gray-900" data-testid={`service-title-${index}`}>
+                  {service.title}
+                </h3>
+                
+                <p className="text-gray-600 text-sm leading-relaxed" data-testid={`service-description-${index}`}>
+                  {service.description}
+                </p>
+              </div>
+              
+              {/* Decorative elements - now always visible */}
+              <div className="absolute top-4 right-4 w-20 h-20 bg-gradient-to-br from-primary/5 to-secondary/5 rounded-full blur-2xl"></div>
             </div>
           ))}
         </div>

@@ -2,7 +2,7 @@ import Logo from "@/components/logo";
 
 export default function Footer() {
   return (
-    <footer className="relative overflow-hidden bg-[#0b1230] text-white py-16">
+    <footer className="relative overflow-hidden bg-slate-800 text-white py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}

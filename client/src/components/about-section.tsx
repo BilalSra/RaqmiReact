@@ -93,7 +93,7 @@ export default function AboutSection() {
 
           {/* Right Content - Connect Section */}
           <div className="space-y-6">
-            <div className="bg-white p-8 cropped-corner shadow-lg">
+            <div className="relative bg-white p-8 cropped-corner shadow-lg overflow-hidden">
               <h3 className="text-2xl font-bold text-gray-900 mb-4" data-testid="connect-title">
                 Connect With Us
               </h3>
@@ -133,6 +133,14 @@ export default function AboutSection() {
                 >
                   <i className="fab fa-linkedin-in"></i>
                 </a>
+              </div>
+
+              {/* Decorative Rings - Bottom Right */}
+              <div className="absolute -bottom-8 -right-8 pointer-events-none">
+                {/* Outer ring */}
+                <div className="w-32 h-32 border-4 border-primary/10 rounded-full"></div>
+                {/* Inner ring */}
+                <div className="absolute top-4 left-4 w-24 h-24 border-4 border-primary/30 rounded-full"></div>
               </div>
             </div>
           </div>

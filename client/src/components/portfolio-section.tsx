@@ -1,6 +1,12 @@
 import { Button } from "@/components/ui/button";
-import { FiTrendingUp, FiUsers, FiClock } from "react-icons/fi";
+import { FiTrendingUp, FiUsers, FiClock, FiArrowUpRight, FiSearch } from "react-icons/fi";
 import htuxImage from "@assets/htux image.png";
+import htuxMockupImage from "@assets/HTUx Mockup.png";
+import elearningImage from "@assets/elearning.jpg";
+import seoImage from "@assets/seo vv.png";
+import htuxLogo from "@assets/HTUx Logo.png";
+import lisanLogo from "@assets/Lisan-Logo.png";
+import lisanGImage from "@assets/lisan g.jpg";
 
 export default function PortfolioSection() {
   const parseMetric = (metric: string) => {
@@ -11,23 +17,23 @@ export default function PortfolioSection() {
     {
       image: htuxImage,
       alt: "HTUx Growth Acceleration",
-      title: "HTUx Growth Acceleration",
+      title: "Securing Enrollment and Skyrocketing Organic Traffic for a Cutting-Edge STEM School",
       description: "Boosted student enrollment by 80% through targeted digital campaigns and optimized conversion funnels.",
-      metrics: ["+80% Enrollment", "+58% Conversion", "6 months"]
+      metrics: ["+80% Enrollment", "+58% Conversion", "+20% Domain Authority"]
     },
     {
-      image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
-      alt: "Lisan Market Expansion",
-      title: "Lisan Market Expansion",
+      image: lisanGImage,
+      alt: "Lisan MENA Expansion",
+      title: "Expanding Into MENA Countries and Securing New B2B Partnerships Through Digital Marketing Strategies",
       description: "Facilitated Lisan's growth strategy, resulting in a 90% increase in user base and significant boost in website traffic.",
-      metrics: ["+200% Traffic", "+90% Users", "6 months"]
+      metrics: ["+200% Traffic", "+90% Users", "+2 Countries"]
     },
     {
-      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
-      alt: "ExecuteX Product Development",
-      title: "ExecuteX Product Development",
-      description: "Developed within Raqmi Innovation Lab, ExecuteX empowers businesses to bridge the gap between strategy and execution.",
-      metrics: ["+38% Success", "+45% Engagement", "-67% Gap"]
+      image: seoImage,
+      alt: "AI-Powered SEO Analysis Tool",
+      title: "Developed AI-Powered SEO Analysis Platform with Advanced NLP Technology",
+      description: "Engineered a comprehensive SEO optimization platform leveraging artificial intelligence and natural language processing to deliver actionable insights and automated implementation strategies.",
+      metrics: ["+200% Ranking", "+100 Top Five Results", "+30% Domain Authority"]
     }
   ];
 
@@ -50,159 +56,123 @@ export default function PortfolioSection() {
           {portfolioItems.map((item, index) => (
             <div
               key={index}
-              className={`group relative cursor-pointer rounded-xl bg-white shadow-sm hover:shadow-md transition overflow-hidden ${(index === 0 || index === 1 || index === 2) ? 'border border-primary/30' : ''}`}
+              className="group relative cursor-pointer rounded-xl bg-slate-800 shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-slate-700"
               data-testid={`portfolio-item-${index}`}
             >
-              {index === 0 ? (
-                // Modern results header for the first card
-                <div className="relative w-full h-56 overflow-hidden">
-                  {/* Solid secondary header area for two-tone card */}
-                  <div className="absolute inset-0 bg-secondary" />
-                  {/* Glass effect panel */}
-                  <div className="relative h-full flex items-center">
-                    <div className="w-full px-6">
-                      {/* Badge - pinned to top-left near border */}
-                      <div className="absolute top-2 left-4">
-                        <span className="text-[10px] font-semibold uppercase tracking-wide bg-white/20 text-white border border-white/40 backdrop-blur-sm px-2 py-[2px] rounded-full shadow-sm">Growth Marketing Engagement</span>
-                      </div>
-                      {/* Metrics with icons and dividers */}
-                      <div className="mt-8 grid grid-cols-3">
-                        {item.metrics.slice(0, 3).map((m, mi) => {
-                          const { value, label } = parseMetric(m);
-                          const Icon = [FiTrendingUp, FiUsers, FiClock][mi] || FiTrendingUp;
-                          return (
-                            <div key={mi} className="flex flex-col items-center relative text-secondary-foreground">
-                              <div className="flex items-center gap-2">
-                                <Icon className="opacity-80" size={16} />
-                                <span className="text-2xl font-extrabold leading-none">{value}</span>
-                              </div>
-                              <span className="mt-1 text-[11px] opacity-80">{label}</span>
-                              {/* Vertical divider */}
-                              {mi < 2 && <span className="absolute right-0 top-1/2 -translate-y-1/2 h-10 w-px bg-white/50" />}
-                            </div>
-                          );
-                        })}
-                      </div>
-                    </div>
-                  </div>
-                  {/* Bottom separator */}
-                  <div className="absolute bottom-0 left-0 right-0 h-px bg-secondary/30" />
-                </div>
-              ) : index === 1 ? (
-                // Apply same modern results header for the second card (Lisan Market Expansion)
-                <div className="relative w-full h-56 overflow-hidden">
-                  {/* Solid secondary header area for two-tone card */}
-                  <div className="absolute inset-0 bg-secondary" />
-                  {/* Glass effect panel */}
-                  <div className="relative h-full flex items-center">
-                    <div className="w-full px-6">
-                      {/* Badge - pinned to top-left near border */}
-                      <div className="absolute top-2 left-4">
-                        <span className="text-[10px] font-semibold uppercase tracking-wide bg-white/20 text-white border border-white/40 backdrop-blur-sm px-2 py-[2px] rounded-full shadow-sm">Market Expansion Strategy</span>
-                      </div>
-                      {/* Metrics with icons and dividers */}
-                      <div className="mt-8 grid grid-cols-3">
-                        {item.metrics.slice(0, 3).map((m, mi) => {
-                          const { value, label } = parseMetric(m);
-                          const Icon = [FiTrendingUp, FiUsers, FiClock][mi] || FiTrendingUp;
-                          return (
-                            <div key={mi} className="flex flex-col items-center relative text-secondary-foreground">
-                              <div className="flex items-center gap-2">
-                                <Icon className="opacity-80" size={16} />
-                                <span className="text-2xl font-extrabold leading-none">{value}</span>
-                              </div>
-                              <span className="mt-1 text-[11px] opacity-80">{label}</span>
-                              {/* Vertical divider */}
-                              {mi < 2 && <span className="absolute right-0 top-1/2 -translate-y-1/2 h-10 w-px bg-secondary/30" />}
-                            </div>
-                          );
-                        })}
-                      </div>
-                    </div>
-                  </div>
-                  {/* Bottom separator */}
-                  <div className="absolute bottom-0 left-0 right-0 h-px bg-secondary/30" />
-                </div>
-              ) : index === 1 ? (
-                <div className="relative overflow-hidden">
+              {/* Image/Visual Section */}
+              <div className="relative w-full h-48 overflow-hidden">
+                {index === 0 ? (
+                  <img
+                    src={htuxMockupImage}
+                    alt="HTUx Mockup"
+                    className="w-full h-full object-cover"
+                  />
+                ) : index === 1 ? (
+                  <img
+                    src={lisanGImage}
+                    alt="Lisan MENA Expansion"
+                    className="w-full h-full object-cover"
+                  />
+                ) : index === 2 ? (
+                  <img
+                    src={seoImage}
+                    alt="AI-Powered SEO Analysis Tool"
+                    className="w-full h-full object-cover"
+                  />
+                ) : (
                   <img
                     src={item.image}
                     alt={item.alt}
-                    className="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300"
-                    data-testid={`portfolio-image-${index}`}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-colors duration-300"></div>
-                </div>
-              ) : index === 2 ? (
-                // Apply similar header for the third card with light red top and metrics
-                <div className="relative w-full h-56 overflow-hidden">
-                  {/* True red header area */}
-                  <div className="absolute inset-0 bg-red-500" />
-                  <div className="relative h-full flex items-center">
-                    <div className="w-full px-6">
-                      {/* Badge */}
-                      <div className="absolute top-2 left-4">
-                        <span className="text-[10px] font-semibold uppercase tracking-wide bg-white/20 text-white border border-white/40 backdrop-blur-sm px-2 py-[2px] rounded-full shadow-sm">Product Development</span>
-                      </div>
-                      {/* Metrics */}
-                      <div className="mt-8 grid grid-cols-3">
-                        {item.metrics.slice(0, 3).map((m, mi) => {
-                          const { value, label } = parseMetric(m);
-                          const Icon = [FiTrendingUp, FiUsers, FiClock][mi] || FiTrendingUp;
-                          return (
-                            <div key={mi} className="flex flex-col items-center relative text-white">
-                              <div className="flex items-center gap-2">
-                                <Icon className="opacity-90" size={16} />
-                                <span className="text-2xl font-extrabold leading-none">{value}</span>
-                              </div>
-                              <span className="mt-1 text-[11px] opacity-90">{label}</span>
-                              {mi < 2 && <span className="absolute right-0 top-1/2 -translate-y-1/2 h-10 w-px bg-white/50" />}
-                            </div>
-                          );
-                        })}
-                      </div>
-                    </div>
+                )}
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-800/60 to-transparent" />
+              </div>
+
+              {/* Content Section */}
+              <div className="p-6 text-white">
+                {/* HTUx Logo for first card */}
+                {index === 0 && (
+                  <div className="mb-4">
+                    <img
+                      src={htuxLogo}
+                      alt="HTUx Logo"
+                      className="h-8 w-auto brightness-0 invert"
+                    />
                   </div>
-                  {/* Bottom separator */}
-                  <div className="absolute bottom-0 left-0 right-0 h-px bg-white/50" />
+                )}
+
+                {/* Lisan Logo for second card */}
+                {index === 1 && (
+                  <div className="mb-4">
+                    <img
+                      src={lisanLogo}
+                      alt="Lisan Logo"
+                      className="h-8 w-auto brightness-0 invert"
+                    />
+                  </div>
+                )}
+
+                {/* Search Icon for third card */}
+                {index === 2 && (
+                  <div className="mb-4">
+                    <FiSearch className="h-8 w-8 text-white" />
+                  </div>
+                )}
+
+                {/* Category Tags */}
+                <div className="flex flex-wrap gap-2 mb-3">
+                  {index === 0 && (
+                    <>
+                      <span className="text-xs px-2 py-1 bg-white/10 text-white rounded-full border border-white/20">Growth Strategy</span>
+                      <span className="text-xs px-2 py-1 bg-white/10 text-white rounded-full border border-white/20">Digital Marketing</span>
+                      <span className="text-xs px-2 py-1 bg-white/10 text-white rounded-full border border-white/20">Search Engine Optimization</span>
+                    </>
+                  )}
+                  {index === 1 && (
+                    <>
+                      <span className="text-xs px-2 py-1 bg-white/10 text-white rounded-full border border-white/20">Market Expansion Strategy</span>
+                      <span className="text-xs px-2 py-1 bg-white/10 text-white rounded-full border border-white/20">Google Ads</span>
+                      <span className="text-xs px-2 py-1 bg-white/10 text-white rounded-full border border-white/20">Search Engine Optimization</span>
+                      <span className="text-xs px-2 py-1 bg-white/10 text-white rounded-full border border-white/20">Technology Integration</span>
+                    </>
+                  )}
+                  {index === 2 && (
+                    <>
+                      <span className="text-xs px-2 py-1 bg-white/10 text-white rounded-full border border-white/20">Product Development</span>
+                      <span className="text-xs px-2 py-1 bg-white/10 text-white rounded-full border border-white/20">Natural Language Processing</span>
+                      <span className="text-xs px-2 py-1 bg-white/10 text-white rounded-full border border-white/20">AI Integration</span>
+                    </>
+                  )}
                 </div>
-              ) : (
-                <div className="relative overflow-hidden">
-                  <img
-                    src={item.image}
-                    alt={item.alt}
-                    className="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300"
-                    data-testid={`portfolio-image-${index}`}
-                  />
-                  <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-colors duration-300"></div>
+
+                {/* Reading Time */}
+                <div className="text-xs text-gray-400 mb-4 flex items-center gap-1">
+                  <FiClock size={12} />
+                  <span>4 min read</span>
                 </div>
-              )}
-              <div className="p-5">
-                <h3 className="text-xl font-bold text-gray-900 mb-2" data-testid={`portfolio-title-${index}`}>
+
+                {/* Title */}
+                <h3 className="text-lg font-bold text-white mb-4 group-hover:text-primary transition-colors leading-tight">
                   {item.title}
                 </h3>
-                <p className="text-gray-600" data-testid={`portfolio-description-${index}`}>
-                  {item.description}
-                </p>
-              </div>
-              {/* Integrated metrics footer within card (skip for first card since metrics are in header) */}
-              {index > 2 && (
-                <div className="px-5 pb-5 pt-4 border-t bg-gray-50">
-                  <div className="flex flex-wrap gap-2">
-                    {item.metrics.map((metric, metricIndex) => (
-                      <span
-                        key={metricIndex}
-                        className="text-xs bg-white text-gray-700 px-2.5 py-1 rounded-md font-medium border border-gray-200"
-                        data-testid={`portfolio-metric-${index}-${metricIndex}`}
-                      >
-                        {metric}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              )}
 
-              {/* Decorative dot theme at bottom-right for first two cards */}
+                {/* Key Metrics */}
+                {item.metrics && item.metrics.length > 0 && (
+                  <div className="space-y-3 mb-4">
+                    {item.metrics.slice(0, 3).map((metric, metricIndex) => {
+                      const { value, label } = parseMetric(metric);
+                      return (
+                        <div key={metricIndex} className="flex items-center gap-2">
+                          <FiArrowUpRight className="text-green-400" size={16} />
+                          <span className="text-xl font-bold text-green-400">{value}</span>
+                          <span className="text-sm text-gray-300">{label}</span>
+                        </div>
+                      );
+                    })}
+                  </div>
+                )}
+              </div>
               {/* Decorative dots removed for all cards per request */}
             </div>
           ))}

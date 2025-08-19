@@ -1,4 +1,6 @@
+import React from "react";
 import { Button } from "@/components/ui/button";
+import { Link } from "wouter";
 import businessGrowthImage from "@assets/Business growth_1754822270274.jpg";
 import { SiGoogle, SiMeta, SiMailchimp, SiLinkedin, SiOpenai } from "react-icons/si";
 
@@ -14,26 +16,30 @@ export default function HeroSection() {
                 Scaling Businesses, Redefining Growth
               </h1>
               <p className="text-lg text-gray-600 leading-relaxed" data-testid="hero-description">
-                Raqmi empowers MENA businesses with data-driven growth strategies. 
-                Transforming brands through innovation-driven strategic mindset.
+                Raqmi empowers businesses with data-driven growth strategies. 
+                Transforming brands through results-driven strategic mindset.
               </p>
             </div>
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button 
-                className="bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-indigo-600 transition-colors duration-200 flex items-center justify-center"
-                data-testid="button-grow-with-raqmi"
-              >
-                Grow with Raqmi
-              </Button>
-              <Button 
-                variant="outline"
-                className="text-primary bg-primary-light border border-primary/20 px-6 py-3 rounded-lg font-medium hover:bg-primary/5 transition-colors duration-200 flex items-center justify-center"
-                data-testid="button-explore-solutions"
-              >
-                Explore Solutions
-              </Button>
+              <Link href="/contact">
+                <Button 
+                  className="bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors duration-200"
+                  data-testid="button-grow-with-raqmi"
+                >
+                  Grow with Raqmi
+                </Button>
+              </Link>
+              <Link href="/solutions">
+                <Button 
+                  variant="outline"
+                  className="text-primary bg-primary-light border border-primary/20 px-6 py-3 rounded-lg font-medium hover:bg-primary/5 transition-colors duration-200 flex items-center justify-center"
+                  data-testid="button-explore-solutions"
+                >
+                  Explore Solutions
+                </Button>
+              </Link>
             </div>
 
             {/* Trust Indicators */}
